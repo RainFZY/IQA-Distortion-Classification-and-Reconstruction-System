@@ -1,0 +1,135 @@
+﻿{% extends 'base.html' %}
+{% block title_block %}图像质量评估、失真分类{% endblock %}
+{% block main_block %}
+<div class="center-block" style="position: relative; width: 90%">
+
+    <div class="row col-lg-6" style="text-align: center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        {% if not img_url %}
+        <br>
+        <br>
+        <br>
+
+        <!-- <h3>Upload Picture</h3> -->
+        <form method="POST" enctype="multipart/form-data">
+            <div class="col-sm-10">
+                <input type="file" class="form-control" name="img" style="float: left;position: relative;padding-top: 3px;" required>
+                <!-- <input type="file" name="img"> -->
+            </div>
+
+            <!-- <input type="submit" value="上传图片"> -->
+            <input type="submit" value="上传图片" class="btn btn-sm btn-info">
+        </form>
+
+        {% else %}
+        <div>
+            <a href="#"><img src={{ img_url }} style="max-width: 100%"></a>
+        </div>
+        {% endif %}
+
+
+    </div>
+
+
+
+
+    <br>
+    <div class="row col-lg-1"></div>
+
+    <div class="row col-lg-4">
+        <div class="tab-pane fade in active">
+            <table class="table table-hover" style="font-size: 16px;">
+            <caption style="text-align: center; font-weight: bolder; font-size: larger; color: indianred">图像质量评估</caption>
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Model</th>
+                        <th style="text-align: center;">IQA得分</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table">
+
+
+                    {% if scores1 %}
+                    <tr>
+                        <td style="text-align: center;">CNN</td>
+                        <td style="text-align: center;">{{ scores1 }}</td>
+                    </tr>
+                    {% endif %}
+
+                    {% if scores2 %}
+                    <tr>
+                        <td style="text-align: center;">LeNet-5</td>
+                        <td style="text-align: center;">{{ scores2 }}</td>
+                    </tr>
+                    {% endif %}
+
+                    {% if scores3 %}
+                    <tr>
+                        <td style="text-align: center;">VGG19</td>
+                        <td style="text-align: center;">{{ scores3 }}</td>
+                    </tr>
+                    {% endif %}
+
+                    {% if scores4 %}
+                    <tr>
+                        <td style="text-align: center;">ResNet-18</td>
+                        <td style="text-align: center;">{{ scores4 }}</td>
+                    </tr>
+                    {% endif %}
+
+                    {% if scores5 %}
+                    <tr>
+                        <td style="text-align: center;">ResNet-34</td>
+                        <td style="text-align: center;">{{ scores5 }}</td>
+                    </tr>
+                    {% endif %}
+
+                    {% if scores6 %}
+                    <tr>
+                        <td style="text-align: center;">平均</td>
+                        <td style="text-align: center;">{{ scores6 }}</td>
+                    </tr>
+                    {% endif %}
+
+                </tbody>
+            </table>
+			<font>* 该得分类似 dmos，反映受到干扰图像与原图的差值，得分越高则受到的干扰越大，图像质量越低</font>
+        </div>
+		
+		<br>
+        <div class="tab-pane fade in active">
+            <table class="table table-hover" style="font-size: 16px;">
+                <caption style="text-align: center; font-weight: bolder; font-size: larger; color: indianred">图像失真分类</caption>
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Label</th>
+                        <th style="text-align: center;">置信度</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table">
+                    {% for item in classify_data.results %}
+                    <tr>
+                        <td style="text-align: center;">{{ item.name }}</td>
+                        <td style="text-align: center;">{{ item.score }}</td>
+                    </tr>
+                    {% endfor %}
+
+                    {% if scores %}
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

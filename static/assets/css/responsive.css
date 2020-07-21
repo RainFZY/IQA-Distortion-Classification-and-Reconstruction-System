@@ -1,0 +1,96 @@
+@media screen and (max-width:1680px){
+
+}/*max-width:1680px*/
+@media screen and (max-width:1440px){
+	.single-welcome-hero {height: 807px;}
+}/*max-width:1440px*/
+
+@media screen and (max-width:1199px){
+	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 10px;}
+	.dropdown-menu {left: -200px;}
+	
+	.welcome-hero-txt h2,.welcome-hero-txt h3 {font-size: 40px;}
+	.welcome-hero-txt h4 {font-size: 28px;}
+
+	.single-populer-products {min-height: 320px;}
+
+}/*max-width:1199px*/
+
+@media screen and (max-width:1024px){
+	nav.navbar.bootsnav.menu-center ul.nav.navbar-center {float: none!important;margin: 0 auto;display: table;}
+
+	.single-welcome-hero {height:768px;}
+	.single-about-img:before,.single-about-img:after{display: none;}
+}/*max-width:1024px*/
+
+@media screen and (max-width:1008px){
+
+}/*max-width:1008px*/
+
+@media screen and (max-width:992px){
+	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
+	nav.navbar.bootsnav.menu-center ul.nav.navbar-center {float:left;margin: 0;padding:0;}
+	nav.navbar.bootsnav .navbar-brand {padding: 25px;}
+	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
+	.attr-nav > ul > li > a {padding: 20px 15px;}
+}/*max-width:992px*/
+
+@media screen and (max-width:991px){
+	.main-menu .nav li span.badge {top: 20px;right:-5px;}
+	.single-feature,.single-blog,.single-new-arrival {max-width: 270px;margin: 30px auto;}
+	.single-populer-products {max-width: 350px;margin: 30px auto;min-height: auto;padding-bottom: 30px;}
+
+}/*max-width:991px*/
+
+@media screen and (max-width:768px){
+    
+}/*max-width:768px*/
+
+@media screen and (max-width:767px){
+	.wrap-sticky nav.navbar.bootsnav.sticked nav.navbar.bootsnav ul.nav > li > a {padding: 15px 25px;}
+	
+	.single-welcome-hero {height:auto;background: transparent;padding: 100px 0;display: block;}
+
+	.feature-content,.blog-content,.new-arrivals-content{margin-top:40px;}
+	
+}/*max-width:767px*/
+
+@media screen and (max-width: 660px){
+
+}/*max-width:660px*/
+
+@media screen and (max-width: 640px){
+
+}/*max-width:640px*/
+
+@media screen and (max-width: 580px){
+
+}/*max-width:580px*/
+
+@media screen and (max-width: 540px){
+
+}/*max-width:540px*/
+
+@media screen and (max-width: 480px){
+	.welcome-hero h2 {font-size: 30px;}
+	
+}/*max-width:480px*/
+
+@media screen and (max-width: 440px){
+	nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title{padding: 10px 0px;}
+	.welcome-hero-txt h2,{font-size: 24px;line-height: 1.5;}
+	.welcome-hero-txt h3,.welcome-hero-txt h4 {font-size: 24px;}
+	
+}/*max-width:400px*/
+
+@media screen and (max-width:350px){
+	nav.navbar.bootsnav .navbar-toggle {margin-right: -25px;left:-10px;}
+	nav.navbar.bootsnav .navbar-brand {padding:25px 0;font-size: 20px;}
+	.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand, .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding: 25px 0px;}
+	.wrap-sticky nav.navbar.bootsnav.sticked .attr-nav > ul > li > a {padding: 22px 10px;}
+}/*max-width:350px*/
+
+@media screen and  (max-width: 320px){
+	
+}/*max-width:320px*/
+

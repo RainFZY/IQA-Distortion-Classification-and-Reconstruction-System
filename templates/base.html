@@ -1,0 +1,42 @@
+{#{% load staticfiles %}#}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{% block  title_block %}Title{% endblock %}</title>
+  <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/css/bootstrap-table.css" rel="stylesheet">
+  <link href="/static/assets/css/sweetalert2.bundle.css" rel="stylesheet" />
+  <script src="/static/assets/js/sweetalert2.bundle.js"></script>
+  <script src="/static/assets/js/jquery.min.js"></script>
+  <script src="/static/assets/js/bootstrap.min.js"></script>
+  <script src="/static/assets/js/bootstrap-table.js"></script>
+  <script src="/static/assets/js/bootstrap-table-zh-CN.js"></script>
+  <script src="/static/assets/js/bootstrap-table-export.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="/">首页</a>
+          </div>
+
+      </nav>
+    </div>
+
+    {% block  main_block %}
+
+    {% endblock %}
+  </div>
+
+</body>
+
+
+
+</html>
