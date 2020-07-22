@@ -9,6 +9,8 @@ To check the training process or get your own model, follow the link:
 
 https://github.com/RainFZY/Image-Quality-Assessment-By-Multiple-Models
 
+
+
 ### Image Distortion Classification
 
 Classify the distortion of input image into 3 classes: 
@@ -16,6 +18,8 @@ Classify the distortion of input image into 3 classes:
 **noise** (wn), **blur** (gblur), **JPEG compression** (jpeg)
 
 Provide each classification's confidence coefficient.
+
+
 
 ### Start the Django Service
 
@@ -32,6 +36,8 @@ Provide each classification's confidence coefficient.
    ```
 
 3. Enter http://127.0.0.1:8000/ in your browser
+
+   
 
 ### Test Demo
 
