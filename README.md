@@ -1,7 +1,7 @@
 ## IQA-and-Distortion-Classification-System
 ### **IQA (Image Quality Assessment)**
 
-- Use 5 models -- CNN, LeNet-5, ResNet18, ResNet34, VGG19 to respectively assess the input image's quality and get 5 scores. The final IQA score are the average of these 5 scores.
+- Use multiple models, including CNN, LeNet-5, ResNet, VGG ... to respectively assesses the input image's quality and get the score. The final IQA score of the input image is the average of all these scores.
 
 - Models are provided in the folder `app/assess/models`
 
