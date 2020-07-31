@@ -42,6 +42,8 @@
 
 ### **Test Demo**
 
+![](https://github.com/RainFZY/IQA-and-Distortions-Processing-System/blob/master/images/screen_shot/demo.gif)
+
 ***Home page***
 
 ![](https://github.com/RainFZY/IQA-and-Distortions-Processing-System/blob/master/images/screen_shot/example1.png)
