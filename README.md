@@ -19,7 +19,9 @@
 
 - Provide each classification's confidence coefficient.
 
+### Image Inpainting
 
+- Restore a **noise**-labeled image to a higher-quality image by noise elimination
 
 
 ### **Start the Django Service**
@@ -42,7 +44,7 @@
 
 ### **Test Demo**
 
-![](https://github.com/RainFZY/IQA-and-Distortions-Processing-System/blob/master/images/screen_shot/demo.gif)
+![](https://github.com/RainFZY/IQA-and-Distortions-Processing-System/blob/master/images/screen_shot/demo2.gif)
 
 ***Home page***
 
