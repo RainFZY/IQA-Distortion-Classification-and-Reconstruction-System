@@ -1,4 +1,4 @@
-## IQA-and-Distortion-Classification-System
+## IQA, Distortion Classification and Reconstruction System
 ### **IQA (Image Quality Assessment)**
 
 - Use multiple models, including CNN, LeNet-5, ResNet, VGG ... to respectively assesses the input image's quality and get the score. The final IQA score of the input image is the average of all these scores.
