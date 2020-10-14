@@ -19,7 +19,7 @@
 
 - Provide each classification's confidence coefficient.
 
-### Image Inpainting
+### Image Reconstruction
 
 - Restore a **noise**-labeled image to a higher-quality image by noise elimination
 
